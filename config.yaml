@@ -1,0 +1,48 @@
+# config.yaml - Konfiguration des EngineAI-IPO-Monitors (Kapitel 4, 7, 12)
+
+target_company:
+  name: "EngineAI Robotics"
+  aliases:
+    - "EngineAI"
+    - "Engine AI"
+    - "EngineAI Robotics"
+  website: "https://www.engineai.com"
+
+data_sources:
+  rss_feeds:
+    - name: "TechCrunch"
+      url: "https://techcrunch.com/feed/"
+      enabled: true
+      max_articles: 20
+    - name: "HKEX News"
+      url: "https://www.hkex.com.hk/News/RSSFeed"
+      enabled: true
+      max_articles: 20
+    - name: "Google News: EngineAI"
+      url: "https://news.google.com/rss/search?q=EngineAI&hl=de&gl=DE&ceid=DE:de"
+      enabled: true
+      max_articles: 20
+    - name: "Google News: EngineAI IPO"
+      url: "https://news.google.com/rss/search?q=EngineAI+IPO&hl=en&gl=US&ceid=US:en"
+      enabled: true
+      max_articles: 20
+
+scheduler:
+  interval_hours: 1
+  max_retries: 3
+  max_age_days: 2
+
+database:
+  path: "data/watcher.db"
+
+logging:
+  file: "logs/engineai.log"
+  level: "INFO"
+
+notifications:
+  telegram:
+    enabled: true
+  ntfy:
+    enabled: true
+  email:
+    enabled: false

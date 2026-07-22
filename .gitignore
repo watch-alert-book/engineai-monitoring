@@ -1,0 +1,12 @@
+# .gitignore - Dateien, die nie eingecheckt werden duerfen (Kapitel 4.2)
+.env
+.venv/
+__pycache__/
+*.pyc
+data/
+logs/
+
+# Testing (Kapitel 14)
+.pytest_cache/
+htmlcov/
+.coverage
