@@ -1,8 +1,7 @@
 # EngineAI Monitoring
 
 **Watch & Alert** — Automatisierte Nachrichten- und Marktüberwachung mit Python.
-Referenzprojekt zum Buch *"Watch & Alert — Automatisierte Nachrichten- und
-Marktüberwachung mit Python"* von Stephan Paul.
+Referenzprojekt von Stephan Paul.
 
 Beobachtet RSS-Feeds und Google News, klassifiziert Artikel-Relevanz per LLM,
 speichert den Zustand in SQLite und verschickt Alerts über Telegram, ntfy.sh
